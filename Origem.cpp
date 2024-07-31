@@ -12,7 +12,7 @@
 
 enum display_game {
 	menu,
-	main
+	main_screen
 };
 
 float heigth = 1000;
@@ -97,9 +97,12 @@ int main(int argc, char** argv) {
 	al_start_timer(timer);
 	int mouse_pos_x;
 	int mouse_pos_y;
+	int screen_state = menu;
+	int* screen_pointer = &screen_state;
+	bool redraw = false;
 
 	//create_canvas(width, heigth);
-	btn_start(font);
+	draw_screens(screen_state, font);
 
 	while (!exit){
 		al_wait_for_event(queue, &event);
@@ -108,6 +111,8 @@ int main(int argc, char** argv) {
 		{
 		case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
 			mouse_pos_x = event.mouse.x;
+			mouse_pos_y = event.mouse.y;
+			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw);
 			break;
 		case ALLEGRO_EVENT_TIMER:
 			draw = true;
@@ -121,6 +126,11 @@ int main(int argc, char** argv) {
 		if (draw) {
 			draw_game();
 			draw = false;
+		}
+
+		if (redraw) {
+			draw_screens(screen_state, font);
+			redraw = false;
 		}
 	}
 

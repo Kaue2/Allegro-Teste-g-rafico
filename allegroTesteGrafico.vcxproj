@@ -143,12 +143,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Btn Screen Change.cpp" />
     <ClCompile Include="Button Colection.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Canvas.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Btn Screen Change.h" />
     <ClInclude Include="Button Colection.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Canvas.h" />

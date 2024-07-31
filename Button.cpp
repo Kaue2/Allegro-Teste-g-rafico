@@ -14,7 +14,11 @@ void Button::draw_rect(){
 	al_draw_rectangle(x, y, x + width, y + heigth, color, 1);
 }
 
-// usar interface para implementação
-int* Button::action(int* display_game) {
+// usar interface para implementação?
+void Button::action(int* display_game, bool redraw) {
+
+}
+
+void Button::click_event(int mouse_x, int mouse_y, int* display_game, bool redraw) {
 
 }
