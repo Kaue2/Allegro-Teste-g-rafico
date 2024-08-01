@@ -1,16 +1,13 @@
-#include "Button.h"
+#include "Btn Screen Change.h"
+#include <vector>
 #pragma once
+
+class Btn_Screen_Change;
+
+template <typename T> 
 
 class Button_Colection {
 public:
-	Button* btn_colection;
+	std::vector<T> colection;
 
-	Button_Colection();
-
-	int add(Button btn);
-	int remove(Button btn);
-	int length();
-
-private:
-	int final;
 };

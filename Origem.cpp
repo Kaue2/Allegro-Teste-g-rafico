@@ -100,6 +100,7 @@ int main(int argc, char** argv) {
 	int screen_state = menu;
 	int* screen_pointer = &screen_state;
 	bool redraw = false;
+	bool* redraw_pointer = &redraw;
 
 	//create_canvas(width, heigth);
 	draw_screens(screen_state, font);
@@ -112,7 +113,7 @@ int main(int argc, char** argv) {
 		case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
 			mouse_pos_x = event.mouse.x;
 			mouse_pos_y = event.mouse.y;
-			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw);
+			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw_pointer);
 			break;
 		case ALLEGRO_EVENT_TIMER:
 			draw = true;

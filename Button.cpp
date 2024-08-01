@@ -15,10 +15,10 @@ void Button::draw_rect(){
 }
 
 // usar interface para implementação?
-void Button::action(int* display_game, bool redraw) {
+void Button::action(int* display_game, bool *redraw) {
 
 }
 
-void Button::click_event(int mouse_x, int mouse_y, int* display_game, bool redraw) {
+void Button::click_event(int mouse_x, int mouse_y, int* display_game, bool *redraw) {
 
 }

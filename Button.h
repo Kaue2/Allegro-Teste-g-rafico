@@ -15,6 +15,6 @@ public:
 
 	void draw_rect();
 
-	virtual void action(int* display_game, bool redraw);
-	virtual void click_event(int mouse_x, int mouse_y, int *display_game, bool redraw);
+	virtual void action(int* display_game, bool *redraw);
+	virtual void click_event(int mouse_x, int mouse_y, int *display_game, bool *redraw);
 };

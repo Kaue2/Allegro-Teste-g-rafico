@@ -5,7 +5,9 @@ Btn_Screen_Change::Btn_Screen_Change(int x, int y, int width, int height, ALLEGR
 	go_to_screen(go_to_screen){}
 
 
-void Btn_Screen_Change::click_event(int mouse_x, int mouse_y, int* display_game, bool redraw) {
+void Btn_Screen_Change::click_event(int mouse_x, int mouse_y, int* display_game, bool *redraw) {
+	mouse_x -= 500;
+	mouse_y -= 500;
 	if (mouse_x >= this->x && mouse_x <= this->x + this->width &&
 		mouse_y >= this->y && mouse_y <= this->y + this->heigth && 
 		this) {
@@ -15,6 +17,7 @@ void Btn_Screen_Change::click_event(int mouse_x, int mouse_y, int* display_game,
 
 
 
-void Btn_Screen_Change::action(int* display_game, bool redraw) {
+void Btn_Screen_Change::action(int* display_game, bool *redraw) {
 	*display_game = this->go_to_screen;
+	*redraw = true;
 }
