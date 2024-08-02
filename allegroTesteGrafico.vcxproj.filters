@@ -27,34 +27,34 @@
     <ClCompile Include="Origem.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Canvas.cpp">
+    <ClCompile Include="Include\Canvas\Canvas.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Btn Screen Change.cpp">
-      <Filter>Arquivos de Origem\Button</Filter>
-    </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Arquivos de Origem\Button</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard Reader.cpp">
+    <ClCompile Include="Include\Keyboard_Reader\Keyboard Reader.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Button\Btn Screen Change.cpp">
+      <Filter>Arquivos de Origem\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Button\Button.cpp">
+      <Filter>Arquivos de Origem\Button</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Canvas.h">
+    <ClInclude Include="Include\Canvas\Canvas.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Btn Screen Change.h">
-      <Filter>Arquivos de Cabeçalho\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Button Colection.h">
-      <Filter>Arquivos de Cabeçalho\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Arquivos de Cabeçalho\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard Reader.h">
+    <ClInclude Include="Include\Keyboard_Reader\Keyboard Reader.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Button\Btn Screen Change.h">
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Button\Button Colection.h">
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Button\Button.h">
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

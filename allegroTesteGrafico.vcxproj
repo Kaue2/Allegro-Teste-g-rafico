@@ -143,18 +143,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Btn Screen Change.cpp" />
-    <ClCompile Include="Button.cpp" />
-    <ClCompile Include="Canvas.cpp" />
-    <ClCompile Include="Keyboard Reader.cpp" />
+    <ClCompile Include="Include\Button\Btn Screen Change.cpp" />
+    <ClCompile Include="Include\Button\Button.cpp" />
+    <ClCompile Include="Include\Canvas\Canvas.cpp" />
+    <ClCompile Include="Include\Keyboard_Reader\Keyboard Reader.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Btn Screen Change.h" />
-    <ClInclude Include="Button Colection.h" />
-    <ClInclude Include="Button.h" />
-    <ClInclude Include="Canvas.h" />
-    <ClInclude Include="Keyboard Reader.h" />
+    <ClInclude Include="Include\Button\Btn Screen Change.h" />
+    <ClInclude Include="Include\Button\Button Colection.h" />
+    <ClInclude Include="Include\Button\Button.h" />
+    <ClInclude Include="Include\Canvas\Canvas.h" />
+    <ClInclude Include="Include\Keyboard_Reader\Keyboard Reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
