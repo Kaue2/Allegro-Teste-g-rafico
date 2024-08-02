@@ -6,10 +6,8 @@
 #include <allegro5/allegro_ttf.h>
 #include <stdbool.h>
 #include <math.h>
-#include "Canvas.h"
-#include "DeviceDisplay.h"
-#include "Button Colection.h"
-#include "Keyboard Reader.h"
+#include "Include/Canvas/Canvas.h"
+#include "Include/Keyboard_Reader/Keyboard Reader.h"
 
 enum display_game {
 	menu,
@@ -73,7 +71,7 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	ALLEGRO_TIMER* timer = al_create_timer(5.0);
+	ALLEGRO_TIMER* timer = al_create_timer(1.0 / 30.0);
 	if (!timer) {
 		std::cerr << "Erro ao inciar o timer" << std::endl;
 		return 1;
@@ -125,8 +123,8 @@ int main(int argc, char** argv) {
 			draw = true;
 			break;
 		case ALLEGRO_EVENT_KEY_DOWN:
-				std::cout << "keycode: " << event.keyboard.keycode << std::endl;
-				Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer);
+			std::cout << "keycode: " << event.keyboard.keycode << std::endl;
+			Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer, font);
 			break;
 		}
 

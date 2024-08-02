@@ -3,9 +3,9 @@
 #include <allegro5/allegro_font.h>
 #include <iostream>
 #include <vector>
-#include "Button.h"
-#include "Button Colection.h"
-#include "Btn Screen Change.h"
+#include "../Button/Btn Screen Change.h"
+#include "../Button/Button Colection.h"
+
 
 ALLEGRO_COLOR white = al_map_rgb(255,255,255);
 ALLEGRO_COLOR green = al_map_rgb(0, 200, 0);
@@ -43,9 +43,6 @@ void draw_screens(int screen_num, ALLEGRO_FONT* font) {
 }
 
 void btn_click_event(int *screen_num, int mouse_pos_x, int mouse_pos_y, bool *redraw) {
-	/*
-	
-	*/
 	for (size_t i = 0; i < colection.colection.size(); i++) {
 		if (colection.colection[i].screen_num == *screen_num) {
 			std::cout << "i: " << i << " screen number: " << *screen_num << " length: " << colection.colection.size() << std::endl;
