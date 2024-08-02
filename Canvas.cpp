@@ -38,6 +38,7 @@ void draw_screens(int screen_num, ALLEGRO_FONT* font) {
 	}
 	if (screen_num == 1) {
 		create_canvas(1000, 1000);
+		linear_function(2, 200);
 	}
 }
 

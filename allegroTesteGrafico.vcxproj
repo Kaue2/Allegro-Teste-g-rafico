@@ -144,9 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Btn Screen Change.cpp" />
-    <ClCompile Include="Button Colection.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="Keyboard Reader.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +154,7 @@
     <ClInclude Include="Button Colection.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Canvas.h" />
+    <ClInclude Include="Keyboard Reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

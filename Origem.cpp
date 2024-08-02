@@ -9,6 +9,7 @@
 #include "Canvas.h"
 #include "DeviceDisplay.h"
 #include "Button Colection.h"
+#include "Keyboard Reader.h"
 
 enum display_game {
 	menu,
@@ -17,6 +18,7 @@ enum display_game {
 
 float heigth = 1000;
 float width = 1000;
+Keyboard_Reader Keyboard_reader;
 
 void apply_transformation(float x, float y) {
 	ALLEGRO_TRANSFORM transform;
@@ -92,6 +94,7 @@ int main(int argc, char** argv) {
 	al_register_event_source(queue, al_get_mouse_event_source());
 
 	bool exit = false;
+	bool* exit_pointer = &exit;
 	bool draw = false;
 	ALLEGRO_EVENT event;
 	al_start_timer(timer);
@@ -116,11 +119,14 @@ int main(int argc, char** argv) {
 			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw_pointer);
 			break;
 		case ALLEGRO_EVENT_TIMER:
+			mouse_pos_x = event.mouse.x;
+			mouse_pos_y = event.mouse.y;
+			std::cout << "X:" << mouse_pos_x << " Y:" << mouse_pos_y <<std::endl;
 			draw = true;
 			break;
 		case ALLEGRO_EVENT_KEY_DOWN:
-			if(event.keyboard.keycode == ALLEGRO_KEY_ESCAPE)
-				exit = true;
+				std::cout << "keycode: " << event.keyboard.keycode << std::endl;
+				Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer);
 			break;
 		}
 

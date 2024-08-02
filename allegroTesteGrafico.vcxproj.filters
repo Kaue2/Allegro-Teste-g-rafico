@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Button">
+      <UniqueIdentifier>{e285250d-416b-43e5-87cc-2fd4e8790f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Button">
+      <UniqueIdentifier>{5bab53b2-2957-47cd-bcfe-1cfb18b3c0b9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -24,13 +30,13 @@
     <ClCompile Include="Canvas.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Button Colection.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Btn Screen Change.cpp">
+      <Filter>Arquivos de Origem\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Arquivos de Origem\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard Reader.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +44,16 @@
     <ClInclude Include="Canvas.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+    <ClInclude Include="Btn Screen Change.h">
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
     </ClInclude>
     <ClInclude Include="Button Colection.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
     </ClInclude>
-    <ClInclude Include="Btn Screen Change.h">
+    <ClInclude Include="Button.h">
+      <Filter>Arquivos de Cabeçalho\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard Reader.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

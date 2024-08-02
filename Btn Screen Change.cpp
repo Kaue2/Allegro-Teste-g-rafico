@@ -9,8 +9,7 @@ void Btn_Screen_Change::click_event(int mouse_x, int mouse_y, int* display_game,
 	mouse_x -= 500;
 	mouse_y -= 500;
 	if (mouse_x >= this->x && mouse_x <= this->x + this->width &&
-		mouse_y >= this->y && mouse_y <= this->y + this->heigth && 
-		this) {
+		mouse_y >= this->y && mouse_y <= this->y + this->heigth) {
 		action(display_game, redraw);
 	}
 }
