@@ -117,9 +117,9 @@ int main(int argc, char** argv) {
 			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw_pointer);
 			break;
 		case ALLEGRO_EVENT_TIMER:
-			mouse_pos_x = event.mouse.x;
-			mouse_pos_y = event.mouse.y;
-			std::cout << "X:" << mouse_pos_x << " Y:" << mouse_pos_y <<std::endl;
+			//mouse_pos_x = event.mouse.x;
+			//mouse_pos_y = event.mouse.y;
+			//std::cout << "X:" << mouse_pos_x << " Y:" << mouse_pos_y <<std::endl;
 			draw = true;
 			break;
 		case ALLEGRO_EVENT_KEY_DOWN:

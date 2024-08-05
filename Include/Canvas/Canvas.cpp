@@ -5,18 +5,15 @@
 #include <vector>
 #include "../Button/Btn Screen Change.h"
 #include "../Button/Button Colection.h"
+#include "../Colors/Colors.h"
 
-
-ALLEGRO_COLOR white = al_map_rgb(255,255,255);
-ALLEGRO_COLOR green = al_map_rgb(0, 200, 0);
-ALLEGRO_COLOR black = al_map_rgb(0,0,0);
-
-Btn_Screen_Change btn_str = Btn_Screen_Change(-100, -25, 200, 50, white, 0, 1);
+Colors colors1 = Colors();
+Btn_Screen_Change btn_str = Btn_Screen_Change(-100, -25, 200, 50, colors1.white, 0, 1);
 Button_Colection<Btn_Screen_Change> colection = Button_Colection<Btn_Screen_Change>();
 
 void create_canvas(float width, float height) {
-	al_draw_line(-width / 2, 0, width / 2, 0, white, 1); // eixo X
-	al_draw_line(0, -height / 2, 0, height / 2, white, 1); // eixo y
+	al_draw_line(-width / 2, 0, width / 2, 0, colors1.white, 1); // eixo X
+	al_draw_line(0, -height / 2, 0, height / 2, colors1.white, 1); // eixo y
 }
 
 void linear_function(float m, float b) {
@@ -25,20 +22,20 @@ void linear_function(float m, float b) {
 	// para cima o y está decrescendo e quando vamos para baixo ele cresce
 	for (int x = -500; x < 500; x++) {
 		y = m * x + b;
-		al_draw_pixel(x, -y, green); // invertemos o Y para agir como esperado
+		al_draw_pixel(x, -y, colors1.green); // invertemos o Y para agir como esperado
 	}
 }
 
 void draw_screens(int screen_num, ALLEGRO_FONT* font) {
-	al_clear_to_color(black);
+	al_clear_to_color(colors1.black);
 	if (screen_num == 0) {
 		btn_str.draw_rect();
-		al_draw_text(font, white, -60, -17, 0, "Bem vindo");
+		al_draw_text(font, colors1.white, -60, -17, 0, "Bem vindo");
 		colection.colection.push_back(btn_str);
 	}
 	if (screen_num == 1) {
 		create_canvas(1000, 1000);
-		linear_function(2, 200);
+		linear_function(8, 0);
 	}
 }
 

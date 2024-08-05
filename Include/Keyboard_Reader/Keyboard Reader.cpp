@@ -1,6 +1,11 @@
-#include "Keyboard Reader.h"
+#include <allegro5/allegro5.h>
+#include <allegro5/allegro_primitives.h>
 #include <string>
 #include <iostream>
+#include "Keyboard Reader.h"
+#include "../Colors/Colors.h"
+
+Colors colors = Colors();
 
 Keyboard_Reader::Keyboard_Reader() :
 	buffer(),
@@ -29,7 +34,7 @@ void Keyboard_Reader::read_keys(int keycode, bool *exit, ALLEGRO_FONT *font)
 		break;
 	}
 
-	draw_buffer(-500, -450, this->buffer, font);
+	draw_buffer(-500, -500, this->buffer, font);
 }
 
 void Keyboard_Reader::add_char(int letter)
@@ -53,6 +58,7 @@ void Keyboard_Reader::remove_char()
 		std::cout << "O buffer está vazio" << std::endl;
 		return;
 	}
+	al_draw_filled_rectangle((this->length - 1) * 18 - 504, -500, this->length * 18 - 500, -473, colors.black);
 	this->buffer[--length] = '\0';
 }
 

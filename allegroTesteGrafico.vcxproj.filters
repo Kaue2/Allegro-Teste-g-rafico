@@ -39,6 +39,9 @@
     <ClCompile Include="Include\Button\Button.cpp">
       <Filter>Arquivos de Origem\Button</Filter>
     </ClCompile>
+    <ClCompile Include="Include\Colors\Colors.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Canvas\Canvas.h">
@@ -55,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="Include\Button\Button.h">
       <Filter>Arquivos de Cabeçalho\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Colors\Colors.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
