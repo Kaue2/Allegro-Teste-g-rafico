@@ -6,6 +6,7 @@ Colors::Colors() {
 	red = al_map_rgb(250, 0, 0);
 	green = al_map_rgb(0, 250, 0);
 	blue = al_map_rgb(0, 0, 250);
+	gray = al_map_rgb(127, 127, 127);
 }
 	
 

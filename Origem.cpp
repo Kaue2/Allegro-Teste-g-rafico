@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
 		std::cerr << "Erro ao instalar o mouse" << std::endl;
 	}
 
-	ALLEGRO_FONT* font = al_load_font("font.ttf", 24, 0);
+	ALLEGRO_FONT* font = al_load_font("font.ttf", 18, 0);
 	if (!font) { 
 		std::cerr << "Erro ao iniciar a fonte" << std::endl;
 	}
@@ -94,14 +94,18 @@ int main(int argc, char** argv) {
 	bool exit = false;
 	bool* exit_pointer = &exit;
 	bool draw = false;
-	ALLEGRO_EVENT event;
-	al_start_timer(timer);
-	int mouse_pos_x;
-	int mouse_pos_y;
 	int screen_state = menu;
 	int* screen_pointer = &screen_state;
 	bool redraw = false;
 	bool* redraw_pointer = &redraw;
+	bool shift_mode = false;
+	bool* shift_mode_pointer = &shift_mode;
+	ALLEGRO_EVENT event;
+	ALLEGRO_KEYBOARD_STATE keyboard_state;
+	al_start_timer(timer);
+	int mouse_pos_x;
+	int mouse_pos_y;
+	
 
 	//create_canvas(width, heigth);
 	draw_screens(screen_state, font);
@@ -115,6 +119,7 @@ int main(int argc, char** argv) {
 			mouse_pos_x = event.mouse.x;
 			mouse_pos_y = event.mouse.y;
 			btn_click_event(screen_pointer, mouse_pos_x, mouse_pos_y, redraw_pointer);
+			
 			break;
 		case ALLEGRO_EVENT_TIMER:
 			//mouse_pos_x = event.mouse.x;
@@ -122,9 +127,15 @@ int main(int argc, char** argv) {
 			//std::cout << "X:" << mouse_pos_x << " Y:" << mouse_pos_y <<std::endl;
 			draw = true;
 			break;
-		case ALLEGRO_EVENT_KEY_DOWN:
+		case ALLEGRO_KEY_DOWN:
+			break;
+		case ALLEGRO_EVENT_KEY_CHAR:
 			std::cout << "keycode: " << event.keyboard.keycode << std::endl;
-			Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer, font);
+			al_get_keyboard_state(&keyboard_state);
+			if (al_key_down(&keyboard_state, ALLEGRO_KEY_LSHIFT) || al_key_down(&keyboard_state, ALLEGRO_KEY_RSHIFT)) {
+				*shift_mode_pointer = true;
+			}
+			Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer, font, shift_mode_pointer);
 			break;
 		}
 

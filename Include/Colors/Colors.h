@@ -9,6 +9,7 @@ public:
 	ALLEGRO_COLOR red;
 	ALLEGRO_COLOR green;
 	ALLEGRO_COLOR blue;
+	ALLEGRO_COLOR gray;
 
 	Colors();
 	~Colors();
