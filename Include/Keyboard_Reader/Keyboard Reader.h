@@ -14,5 +14,6 @@ public:
 	void remove_char();
 	void draw_buffer(int pos_x, int pos_y, ALLEGRO_USTR* message, ALLEGRO_FONT *font);
 	void clear_screen_buffer();
+	void draw_function();
 
 };

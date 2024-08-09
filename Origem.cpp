@@ -124,11 +124,11 @@ int main(int argc, char** argv) {
 			//std::cout << "X:" << mouse_pos_x << " Y:" << mouse_pos_y <<std::endl;
 			draw = true;
 			break;
-		case ALLEGRO_KEY_DOWN:
-			break;
 		case ALLEGRO_EVENT_KEY_CHAR:
-			std::cout << "unichar: " << event.keyboard.unichar << std::endl;
-			Keyboard_reader.read_keys(event.keyboard.unichar, exit_pointer, font);
+			if (screen_state == 1) {
+				std::cout << "unichar: " << event.keyboard.unichar << std::endl;
+				Keyboard_reader.read_keys(event.keyboard.unichar, exit_pointer, font);
+			}
 			break;
 		}
 

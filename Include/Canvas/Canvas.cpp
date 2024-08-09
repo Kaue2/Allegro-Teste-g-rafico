@@ -19,7 +19,7 @@ void linear_function(float m, float b) {
 	float y;
 	// para o computador as coordenadas y são invertidas
 	// para cima o y está decrescendo e quando vamos para baixo ele cresce
-	for (int x = -500; x < 500; x++) {
+	for (float x = -500; x < 500; x+= 0.1) {
 		y = m * x + b;
 		al_draw_pixel(x, -y, green); // invertemos o Y para agir como esperado
 	}
@@ -35,7 +35,7 @@ void draw_screens(int screen_num, ALLEGRO_FONT* font) {
 	if (screen_num == 1) {
 		create_canvas(1000, 1000);
 		al_draw_filled_rectangle(-510, -450, 20 * 15 - 500, -423, gray);
-		linear_function(8, 0);
+		//linear_function(8, 0);
 	}
 }
 

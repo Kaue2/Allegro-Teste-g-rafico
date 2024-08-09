@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Include\\Keyboard_Reader\\Keyboard Reader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Colors\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Include\\Colors\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Canvas\\Canvas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Include\\Canvas\\Canvas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Origem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Origem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Canvas\\Canvas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Include\\Canvas\\Canvas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Colors\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FC5EE285-2AE9-459A-906D-4826C6B18D2A}|allegroTesteGrafico.vcxproj|solutionrelative:Include\\Colors\\Colors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,14 +44,14 @@
               "RelativeDocumentMoniker": "Include\\Keyboard_Reader\\Keyboard Reader.h",
               "ToolTip": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Keyboard_Reader\\Keyboard Reader.h",
               "RelativeToolTip": "Include\\Keyboard_Reader\\Keyboard Reader.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-09T20:01:54.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Colors.h",
               "DocumentMoniker": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Colors\\Colors.h",
               "RelativeDocumentMoniker": "Include\\Colors\\Colors.h",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Include\\Colors\\Colors.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-09T19:55:12.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T19:55:12.332Z"
             },
             {
               "$type": "Document",
@@ -70,7 +69,7 @@
               "RelativeDocumentMoniker": "Include\\Keyboard_Reader\\Keyboard Reader.cpp",
               "ToolTip": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Keyboard_Reader\\Keyboard Reader.cpp",
               "RelativeToolTip": "Include\\Keyboard_Reader\\Keyboard Reader.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAARAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-02T21:53:03.693Z",
               "EditorCaption": ""
@@ -83,20 +82,20 @@
               "RelativeDocumentMoniker": "Origem.cpp",
               "ToolTip": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Origem.cpp",
               "RelativeToolTip": "Origem.cpp",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAowIUAAAAAAAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowHwAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-25T23:34:01.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Canvas.cpp",
               "DocumentMoniker": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Canvas\\Canvas.cpp",
               "RelativeDocumentMoniker": "Include\\Canvas\\Canvas.cpp",
               "ToolTip": "C:\\Users\\kaue.oanjos\\source\\repos\\allegro_teste_gr\u00E1fico\\Allegro-Teste-g-rafico\\Include\\Canvas\\Canvas.cpp",
               "RelativeToolTip": "Include\\Canvas\\Canvas.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAowBgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-02T21:51:04.689Z",
               "EditorCaption": ""
