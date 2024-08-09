@@ -39,9 +39,6 @@
     <ClCompile Include="Include\Button\Button.cpp">
       <Filter>Arquivos de Origem\Button</Filter>
     </ClCompile>
-    <ClCompile Include="Include\Colors\Colors.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Canvas\Canvas.h">

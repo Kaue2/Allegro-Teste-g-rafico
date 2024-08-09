@@ -146,7 +146,6 @@
     <ClCompile Include="Include\Button\Btn Screen Change.cpp" />
     <ClCompile Include="Include\Button\Button.cpp" />
     <ClCompile Include="Include\Canvas\Canvas.cpp" />
-    <ClCompile Include="Include\Colors\Colors.cpp" />
     <ClCompile Include="Include\Keyboard_Reader\Keyboard Reader.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>

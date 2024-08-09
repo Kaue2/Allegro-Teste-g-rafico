@@ -6,17 +6,13 @@
 class Keyboard_Reader
 {
 public:
-	char buffer[100];
+	ALLEGRO_USTR *buffer;
 
 	Keyboard_Reader();
-	void read_keys(int keycode, bool *exit, ALLEGRO_FONT *font, bool* shift_mode_pointer);
-	void add_char(int letter, bool* shift_mode_pointer);
+	void read_keys(int keycode, bool *exit, ALLEGRO_FONT *font);
+	void add_char(int letter);
 	void remove_char();
-	void draw_buffer(int pos_x, int pos_y, char *message, ALLEGRO_FONT *font);
+	void draw_buffer(int pos_x, int pos_y, ALLEGRO_USTR* message, ALLEGRO_FONT *font);
 	void clear_screen_buffer();
-	int get_final() const;
 
-
-private:
-	int length;
 };

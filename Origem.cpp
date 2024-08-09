@@ -98,10 +98,7 @@ int main(int argc, char** argv) {
 	int* screen_pointer = &screen_state;
 	bool redraw = false;
 	bool* redraw_pointer = &redraw;
-	bool shift_mode = false;
-	bool* shift_mode_pointer = &shift_mode;
 	ALLEGRO_EVENT event;
-	ALLEGRO_KEYBOARD_STATE keyboard_state;
 	al_start_timer(timer);
 	int mouse_pos_x;
 	int mouse_pos_y;
@@ -130,12 +127,8 @@ int main(int argc, char** argv) {
 		case ALLEGRO_KEY_DOWN:
 			break;
 		case ALLEGRO_EVENT_KEY_CHAR:
-			std::cout << "keycode: " << event.keyboard.keycode << std::endl;
-			al_get_keyboard_state(&keyboard_state);
-			if (al_key_down(&keyboard_state, ALLEGRO_KEY_LSHIFT) || al_key_down(&keyboard_state, ALLEGRO_KEY_RSHIFT)) {
-				*shift_mode_pointer = true;
-			}
-			Keyboard_reader.read_keys(event.keyboard.keycode, exit_pointer, font, shift_mode_pointer);
+			std::cout << "unichar: " << event.keyboard.unichar << std::endl;
+			Keyboard_reader.read_keys(event.keyboard.unichar, exit_pointer, font);
 			break;
 		}
 

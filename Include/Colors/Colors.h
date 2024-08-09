@@ -1,21 +1,10 @@
+
 #include <allegro5/allegro.h>
 #pragma once
 
-class Colors
-{
-public:
-	ALLEGRO_COLOR white;
-	ALLEGRO_COLOR black;
-	ALLEGRO_COLOR red;
-	ALLEGRO_COLOR green;
-	ALLEGRO_COLOR blue;
-	ALLEGRO_COLOR gray;
-
-	Colors();
-	~Colors();
-
-
-
-private:
-
-};
+const ALLEGRO_COLOR black = al_map_rgb(0, 0, 0);
+const ALLEGRO_COLOR white = al_map_rgb(255, 255, 255);
+const ALLEGRO_COLOR red = al_map_rgb(250, 0, 0);
+const ALLEGRO_COLOR blue = al_map_rgb(0, 0, 250);
+const ALLEGRO_COLOR green = al_map_rgb(0, 250, 0);
+const ALLEGRO_COLOR gray = al_map_rgb(100, 100, 100);
