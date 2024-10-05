@@ -143,6 +143,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Include\Element\Element.cpp" />
     <ClCompile Include="Include\Button\Btn Screen Change.cpp" />
     <ClCompile Include="Include\Button\Button.cpp" />
     <ClCompile Include="Include\Canvas\Canvas.cpp" />
@@ -150,6 +151,8 @@
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Element\Element Enum\OperationEnum.h" />
+    <ClInclude Include="Include\Element\Element.h" />
     <ClInclude Include="Include\Button\Btn Screen Change.h" />
     <ClInclude Include="Include\Button\Button Colection.h" />
     <ClInclude Include="Include\Button\Button.h" />
