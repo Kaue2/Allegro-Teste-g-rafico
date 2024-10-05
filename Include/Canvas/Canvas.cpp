@@ -21,7 +21,7 @@ void linear_function(float m, float b) {
 	// para cima o y está decrescendo e quando vamos para baixo ele cresce
 	for (float x = -500; x < 500; x+= 0.1) {
 		y = m * x + b;
-		al_draw_pixel(x, -y, green); // invertemos o Y para agir como esperado
+		al_draw_pixel(x * 10, -y * 10, green); // invertemos o Y para agir como esperado
 	}
 }
 
